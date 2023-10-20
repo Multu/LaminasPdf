@@ -1618,7 +1618,7 @@ class Page
 
         $this->_addProcSet('Text');
 
-        $textObj = new InternalType\StringObject($this->_font->encodeString($text, $charEncoding));
+        $textObj = new InternalType\StringObject($this->_font->encodeString($text ?? '', $charEncoding));
         $xObj = new InternalType\NumericObject($x);
         $yObj = new InternalType\NumericObject($y);
 
