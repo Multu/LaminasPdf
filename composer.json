@@ -8,13 +8,14 @@
     "pdf"
   ],
   "require": {
-    "php": ">=7.4",
-    "laminas/laminas-memory": ">=2.0.0",
+    "php": ">=8.0",
+    "laminas/laminas-memory": "^2.9",
     "laminas/laminas-stdlib": ">=2.0.0"
   },
   "require-dev": {
-    "laminas/laminas-coding-standard": "~1.0.0",
-    "phpunit/phpunit": "^9.6"
+    "laminas/laminas-coding-standard": "^2.1.4",
+    "phpunit/phpunit": "^9.6",
+    "phpstan/phpstan": "^0.12.81"
   },
   "autoload": {
     "psr-4": {
@@ -28,5 +29,10 @@
   },
   "replace": {
     "zendframework/zendpdf": "^2.0.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }
