@@ -304,7 +304,7 @@ abstract class AbstractOutline implements
      */
     public function next(): void
     {
-        return next($this->childOutlines);
+        next($this->childOutlines);
     }
 
     /**
@@ -312,7 +312,7 @@ abstract class AbstractOutline implements
      */
     public function rewind(): void
     {
-        return reset($this->childOutlines);
+        reset($this->childOutlines);
     }
 
     /**
