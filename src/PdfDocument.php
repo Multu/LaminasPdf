@@ -154,6 +154,8 @@ class PdfDocument
      */
     protected static $_inheritableAttributes = ['Resources', 'MediaBox', 'CropBox', 'Rotate'];
 
+    protected string $_pdfHeaderVersion;
+
     /**
      * Request used memory manager
      *
